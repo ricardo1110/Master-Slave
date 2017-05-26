@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
     MPI_Status status;
     MPI_Comm inter_comm;
 
-    strcpy(slave, "slave");
+    strcpy(slave, "./slave");
 
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
